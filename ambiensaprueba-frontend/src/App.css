@@ -1,0 +1,120 @@
+/* App.css */
+
+/* Estilos generales */
+.App {
+  text-align: center;
+  background-color: white;
+  color: black;
+  max-width: 800px; /* Limitar el ancho de la aplicación */
+  margin: 0 auto; /* Centrar la aplicación */
+  padding: 20px;
+}
+
+/* Estilos del encabezado */
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+/* Estilos de los enlaces de navegación */
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  background-color: #444;
+}
+
+/* Estilos para la tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f4f4f4;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Estilos de la barra de búsqueda */
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  padding: 10px; /* Aumentar el padding para mayor comodidad */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: calc(100% - 120px); /* Ajustar el ancho del input */
+}
+
+.search-bar button {
+  margin-left: 5px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Agregar transición */
+}
+
+.search-bar button:hover {
+  background-color: #ddd;
+}
+
+/* Botón para agregar nuevo cliente */
+.new-client-btn {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Agregar transición */
+}
+
+.new-client-btn:hover {
+  background-color: #218838;
+}
+
+/* Estilos de formularios */
+input[type="text"], select {
+  padding: 10px; /* Consistente con otros campos de entrada */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%; /* Asegurar que ocupe el 100% del contenedor */
+  margin-bottom: 10px; /* Espaciado entre campos */
+}
+
+/* Estilos específicos para el selector de estado */
+select {
+  cursor: pointer; /* Cambiar el cursor para indicar que es seleccionable */
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 600px) {
+  .App {
+    padding: 10px; /* Reducir padding en dispositivos pequeños */
+  }
+
+  .search-bar input,
+  .search-bar button,
+  .new-client-btn {
+    width: 100%; /* Hacer botones y campos de entrada a 100% */
+    margin-top: 10px; /* Espaciado entre elementos */
+  }
+}
